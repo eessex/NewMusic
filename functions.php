@@ -6,8 +6,8 @@ function my_enqueue_assets() {
 add_action( 'wp_enqueue_scripts', 'my_enqueue_assets' );
 
 register_nav_menus( array(
-  'primary' => __( 'Primary Menu',      'NewMusicUSA' ),
-  'social'  => __( 'Social Links Menu', 'NewMusicUSA' ),
+  'primary' => __( 'Primary Menu',      'NewMusic' ),
+  'social'  => __( 'Social Links Menu', 'NewMusic' ),
 ) );
 
 // Support Featured Images
