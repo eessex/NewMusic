@@ -2,6 +2,8 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-color: $primary-body-color;
+  color: $gray-dark;
 }
 
 .container {
@@ -19,7 +21,7 @@ body {
   width: 28.29%;
   display: inline-block;
   vertical-align: top;
-  background: $tertiary-body-color;
+  background: $secondary-body-color;
   margin: 2em 0;
   padding: 1em 0;
 }
@@ -33,7 +35,7 @@ header {
     display: flex;
     max-width: 100%;
     align-items: flex-end;
-    padding: .5em 0;
+    padding: 1.5em 0;
     justify-content: space-between;
 
     .title {
@@ -80,7 +82,7 @@ article.single {
 }
 
 a.post.teaser {
-  color: $primary-text-color;
+  color: $gray-dark;
 
   .content {
     margin: 2em 1.5em;
@@ -95,8 +97,16 @@ a.post.teaser {
     display: flex;
     padding: 0 .75em;
     .image {
-        margin-left: -.75em;
-        margin-right: .75em;
+      max-width: 50%;
+      margin-left: -.75em;
+      margin-right: .75em;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    .content {
+      max-width: 50%;
     }
   }
 }

@@ -75,7 +75,7 @@ body {
 
 /* line 10, sass/_partials/_typography.scss */
 a {
-  color: blue;
+  color: #00b0b6;
   text-decoration: none; }
 
 /* line 15, sass/_partials/_typography.scss */
@@ -90,51 +90,51 @@ h1, h2, h3, h4, h5 {
 /* line 24, sass/_partials/_typography.scss */
 h1 {
   font-size: 2.25em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #00b0b6; }
 
-/* line 29, sass/_partials/_typography.scss */
+/* line 30, sass/_partials/_typography.scss */
 h2 {
   font-size: 2em; }
 
-/* line 33, sass/_partials/_typography.scss */
+/* line 34, sass/_partials/_typography.scss */
 h3 {
   font-size: 1.75em; }
 
-/* line 37, sass/_partials/_typography.scss */
+/* line 38, sass/_partials/_typography.scss */
 h4 {
   font-size: 1.5em; }
 
-/* line 41, sass/_partials/_typography.scss */
+/* line 42, sass/_partials/_typography.scss */
 h5 {
   font-size: 0.9em; }
 
-/* line 45, sass/_partials/_typography.scss */
+/* line 46, sass/_partials/_typography.scss */
 h6 {
   font-size: 0.75em; }
 
-/* line 49, sass/_partials/_typography.scss */
+/* line 50, sass/_partials/_typography.scss */
 blockquote {
   padding-left: 1em;
-  border-left: 2px solid #eee; }
+  border-left: 2px solid #fafafa; }
 
-/* line 55, sass/_partials/_typography.scss */
+/* line 56, sass/_partials/_typography.scss */
 nav.main-nav ul {
   margin: 0;
   padding: 0;
   list-style: none; }
-/* line 61, sass/_partials/_typography.scss */
+/* line 62, sass/_partials/_typography.scss */
 nav.main-nav li {
   display: inline-block; }
-/* line 63, sass/_partials/_typography.scss */
+/* line 64, sass/_partials/_typography.scss */
 nav.main-nav a {
   font-size: 0.9em;
-  font-weight: 700;
   font-family: "Oswald", sans-serif;
   display: block;
   text-decoration: none;
   padding-left: 1em;
   text-transform: uppercase;
-  letter-spacing: .025em; }
+  letter-spacing: .075em; }
 
 /* line 76, sass/_partials/_typography.scss */
 header .header, header .main-nav {
@@ -144,96 +144,106 @@ header .header, header .main-nav {
 body {
   display: flex;
   min-height: 100vh;
-  flex-direction: column; }
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #4c564f; }
 
-/* line 7, sass/_partials/_layouts.scss */
+/* line 9, sass/_partials/_layouts.scss */
 .container {
   padding: 0 2.5em;
   position: relative; }
 
-/* line 12, sass/_partials/_layouts.scss */
+/* line 14, sass/_partials/_layouts.scss */
 .content-with-sidebar {
   width: 69.29%;
   min-width: 600px;
   display: inline-block; }
 
-/* line 18, sass/_partials/_layouts.scss */
+/* line 20, sass/_partials/_layouts.scss */
 .sidebar {
   width: 28.29%;
   display: inline-block;
   vertical-align: top;
-  background: honeydew;
+  background: #fafafa;
   margin: 2em 0;
   padding: 1em 0; }
 
-/* line 27, sass/_partials/_layouts.scss */
+/* line 29, sass/_partials/_layouts.scss */
 header {
-  background: #eee; }
-  /* line 29, sass/_partials/_layouts.scss */
+  background: #fafafa; }
+  /* line 31, sass/_partials/_layouts.scss */
   header .main-nav {
     float: right; }
-  /* line 32, sass/_partials/_layouts.scss */
+  /* line 34, sass/_partials/_layouts.scss */
   header .header {
     display: flex;
     max-width: 100%;
     align-items: flex-end;
-    padding: .5em 0;
+    padding: 1.5em 0;
     justify-content: space-between; }
-    /* line 39, sass/_partials/_layouts.scss */
+    /* line 41, sass/_partials/_layouts.scss */
     header .header .title {
       display: flex;
       align-items: flex-end; }
-      /* line 42, sass/_partials/_layouts.scss */
+      /* line 44, sass/_partials/_layouts.scss */
       header .header .title h2 {
         margin: 0;
         line-height: 1em; }
-      /* line 47, sass/_partials/_layouts.scss */
+      /* line 49, sass/_partials/_layouts.scss */
       header .header .title .lead.description p {
         margin: 0 1em; }
 
-/* line 55, sass/_partials/_layouts.scss */
+/* line 57, sass/_partials/_layouts.scss */
 main {
   flex: 1; }
 
-/* line 59, sass/_partials/_layouts.scss */
+/* line 61, sass/_partials/_layouts.scss */
 footer {
-  background: #eee;
+  background: #fafafa;
   font-size: 0.75em; }
-  /* line 63, sass/_partials/_layouts.scss */
+  /* line 65, sass/_partials/_layouts.scss */
   footer .info {
     display: inline-block; }
-  /* line 66, sass/_partials/_layouts.scss */
+  /* line 68, sass/_partials/_layouts.scss */
   footer .scroller {
     float: right; }
 
-/* line 72, sass/_partials/_layouts.scss */
+/* line 74, sass/_partials/_layouts.scss */
 article {
   border: 1px solid #eee;
   padding: 1em 0; }
 
-/* line 76, sass/_partials/_layouts.scss */
+/* line 78, sass/_partials/_layouts.scss */
 article.single {
   width: 100%;
   max-width: 700px;
   margin: 1em auto; }
 
-/* line 82, sass/_partials/_layouts.scss */
+/* line 84, sass/_partials/_layouts.scss */
 a.post.teaser {
-  color: #222222; }
-  /* line 85, sass/_partials/_layouts.scss */
+  color: #4c564f; }
+  /* line 87, sass/_partials/_layouts.scss */
   a.post.teaser .content {
     margin: 2em 1.5em; }
-  /* line 88, sass/_partials/_layouts.scss */
+  /* line 90, sass/_partials/_layouts.scss */
   a.post.teaser article {
     width: 100%;
     margin: 2em 0;
     padding: 0 .75em;
     margin-left: -.75em; }
-  /* line 94, sass/_partials/_layouts.scss */
+  /* line 96, sass/_partials/_layouts.scss */
   a.post.teaser article.with-image {
     display: flex;
     padding: 0 .75em; }
-    /* line 97, sass/_partials/_layouts.scss */
+    /* line 99, sass/_partials/_layouts.scss */
     a.post.teaser article.with-image .image {
+      max-width: 50%;
       margin-left: -.75em;
       margin-right: .75em; }
+      /* line 103, sass/_partials/_layouts.scss */
+      a.post.teaser article.with-image .image img {
+        max-width: 100%;
+        height: auto; }
+    /* line 108, sass/_partials/_layouts.scss */
+    a.post.teaser article.with-image .content {
+      max-width: 50%; }

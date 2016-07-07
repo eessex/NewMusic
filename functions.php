@@ -11,7 +11,11 @@ register_nav_menus( array(
 ) );
 
 // Support Featured Images
-add_theme_support( 'post-thumbnails' );
+$support_args = array(
+	'search-form',
+  'post-thumbnails'
+);
+add_theme_support( 'html5', $support_args );
 
 // Enqueue Google Fonts
 function google_fonts() {
@@ -22,6 +26,22 @@ function google_fonts() {
         }
 
 add_action( 'wp_print_styles', 'google_fonts' );
+
+
+// Register sidebars and widgetized areas.
+function custom_sidebar() {
+
+	register_sidebar( array(
+		'name'          => 'Sidebar',
+		'id'            => 'sidebar',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'custom_sidebar' );
 
 // Add Custom Excerpt to Pages
 // function add_page_excerpt() {
