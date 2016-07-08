@@ -1,6 +1,6 @@
     </main>
 
-    <footer class=" footer">
+    <footer class="footer">
       <div class="container">
         <div class="info">
           <p>One-Page Mag theme by <a target="_blank" href="https://github.com/eessex">@eessex</a></p>

@@ -29,8 +29,12 @@
 				</div>
 				<div class="search"><i class="fa fa-search" aria-hidden="true"></i> Search</div>
       </div>
+			<div id="header-search">
+				<?php get_search_form(); ?>
+			</div>
 		</div>
 	</header>
+
 	<?php get_sidebar(); ?>
 
 	<main class="">

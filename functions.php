@@ -20,8 +20,6 @@ add_theme_support( 'html5', $support_args );
 
 // Enqueue Google Fonts
 function google_fonts() {
-                wp_register_style('Oswald', 'https://fonts.googleapis.com/css?family=Oswald:300,400,700');
-                wp_enqueue_style( 'Oswald');
                 wp_register_style('Libre Franklin', 'https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,700');
                 wp_enqueue_style( 'Libre Franklin');
                 wp_register_style('Josefin Sans', 'https://fonts.googleapis.com/css?family=Josefin+Sans:300,700');
@@ -48,6 +46,14 @@ function custom_sidebar() {
 		'after_title'   => '</h2>',
 	) );
 
+  register_sidebar( array(
+    'name'          => 'Footer',
+    'id'            => 'footer',
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2 class="widget-title">',
+    'after_title'   => '</h2>',
+  ) );
 }
 add_action( 'widgets_init', 'custom_sidebar' );
 

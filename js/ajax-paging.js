@@ -23,10 +23,4 @@
   	});
 	});
 
-	//slide menu/sidebar
-	$(document).on( 'click', 'body .header .menu', function( event ) {
-		$(this).toggleClass('active');
-		$('body .sidebar').toggleClass('active').slideToggle();
-	});
-
 })(jQuery);

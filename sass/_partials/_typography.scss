@@ -12,7 +12,7 @@ header a {
 }
 
 a {
-  color: $tertiary-body-color;
+  color: $secondary-text-color;
   text-decoration: none;
 }
 
@@ -75,4 +75,9 @@ header {
   .header, .main-nav {
     display: inline-block;
   }
+}
+
+article ul {
+  list-style: circle;
+  margin-left: 1.25em;
 }

@@ -23,4 +23,10 @@
   </div>
   </div>
 
+  <?php if ( is_active_sidebar( 'footer' ) ) : ?>
+    <div id="footer" class="widget-area" role="complementary">
+      <?php dynamic_sidebar( 'footer' ); ?>
+    </div>
+  <?php endif; ?>
+  
 <?php get_footer(); ?>

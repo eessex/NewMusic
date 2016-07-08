@@ -26,22 +26,28 @@
         font-size: $h3-font-size;
         border-bottom: 2px solid;
         line-height: 1.35em;
-        color: $tertiary-body-color;
+        color: $secondary-text-color;
+      }
+      input#searchsubmit {
+        border-bottom: none !important;
       }
       ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        color: $tertiary-body-color;
+        color: $secondary-text-color;
       }
     }
     .widget-area,
     .menu.wigitized {
       max-width: 48%;
-      // display: inline-block;
     }
 
-    .instagram-feed .item {
-      display: inline-block;
-      margin: 2%;
-      max-width: 45%;
+    .instagram-feed {
+      display: flex;
+      flex-direction: column-reverse;
+      .item {
+        display: inline-block;
+        margin: 2%;
+        max-width: 45%;
+      }
     }
   }
 }
