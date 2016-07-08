@@ -7,6 +7,10 @@ font-weight: $base-font-weight;
 line-height: 1.75;
 }
 
+header a {
+  color: $primary-text-color;
+}
+
 a {
   color: $tertiary-body-color;
   text-decoration: none;
@@ -43,13 +47,14 @@ h5 {
 }
 
 h6 {
-  font-size: $h5-font-size;
+  font-size: $h6-font-size;
   text-transform: uppercase;
+  letter-spacing: .05em;
 }
 
 blockquote {
     padding-left: 1em;
-    border-left: 2px solid $secondary-body-color;
+    border-left: 2px solid $primary-text-color;
 }
 
 nav.main-nav {
@@ -59,8 +64,6 @@ nav.main-nav {
     padding: 0;
     list-style: none;
   }
-
-  li { display: inline-block; }
 
   a {
     font-size: $h3-font-size;

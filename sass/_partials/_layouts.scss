@@ -6,9 +6,30 @@ body {
   color: $gray-dark;
 }
 
+.container.teasers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  h2.section-title {
+    border-bottom: 3px solid;
+    line-height: 1.25em;
+    margin-bottom: .25em;
+    min-width: 100%;
+    margin-top: 2em;
+  }
+}
+
 .container {
   padding: $base-item-padding;
   position: relative;
+
+  .col-1-2 {
+    width: 48%;
+  }
+  .col-1-3 {
+    width: 32%;
+    max-width: 32%;
+  }
 }
 
 // .content-with-sidebar {
@@ -24,6 +45,14 @@ body {
   background: $secondary-body-color;
   // margin: 2em 0;
   padding: 1em 0;
+}
+
+header.sticky {
+  position: fixed;
+  display: block !important;
+  z-index: 1000;
+  width: 100%;
+  border-bottom: 1px solid $secondary-body-color;
 }
 
 header {
@@ -60,7 +89,8 @@ main {
 
 footer {
   background: $secondary-body-color;
-  font-size: $h5-font-size;
+  font-size: small;
+  font-weight: 400;
 
   .info {
     display: inline-block;
@@ -81,32 +111,82 @@ article.single {
   margin: 1em auto;
 }
 
+article.featured {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+
+  h2.post-title {
+    border-bottom: 3px solid;
+    line-height: 1.25em;
+    margin: 0 .5em;
+  }
+  .content {
+    padding: 0 2em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+.featured.fonts {
+  .content {
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  width: 100%;
+  .body {
+    max-width: 700px;
+  }
+  }
+}
+.featured.about {
+  background-color: aliceblue;
+  .body {
+    padding: 0 2em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .about-theme,
+  .about-plugin {
+    width: 46%;
+    h4 {
+      line-height: 1.5em;
+      margin-bottom: .75em;
+    }
+  }
+}
+
 a.post.teaser {
   color: $gray-dark;
-
+  text-align: center;
   .content {
     margin: 2em 1.5em;
   }
   article {
     width: 100%;
     margin: 2em 0;
-    padding: 0 .75em;
-    margin-left: -.75em;
+
+    h5.post-meta {
+      display: inline;
+      border-top: 2px solid;
+      padding-top: .75em;
+    }
   }
   article.with-image {
-    display: flex;
-    padding: 0 .75em;
     .image {
-      max-width: 50%;
-      margin-left: -.75em;
-      margin-right: .75em;
+      width: 100%;
+      // text-align: center;
       img {
         max-width: 100%;
         height: auto;
+        max-height: 200px;
+        width: auto;
+      }
+      p {
+        display: none;
       }
     }
     .content {
-      max-width: 50%;
     }
   }
 }

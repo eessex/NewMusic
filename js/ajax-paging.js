@@ -2,7 +2,7 @@
 	//add ajaxified class
 	var siteURL = "http://" + top.location.host.toString();
 	$internalLinks = $("a[href^='"+siteURL+"'], a[href^='/'], a[href^='./'], a[href^='../'], a[href^='#']").addClass('ajaxified');
-
+	$noAjax = $('.no-ajax').removeClass("ajaxified")
 	//add link behavior
 	$(document).on( 'click', 'body a.ajaxified', function( event ) {
 		event.preventDefault();

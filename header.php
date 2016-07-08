@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Blog Template for <?php echo get_bloginfo( 'name' ); ?></title>
+	<title>Simple theme for <?php echo get_bloginfo( 'name' ); ?></title>
 	<!-- <link href="<?php //bloginfo('template_directory');?>/style.css" rel="stylesheet"> -->
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -28,7 +28,7 @@
 					<h3><a href="<?php bloginfo('wpurl');?>"><?php echo get_bloginfo( 'name' ); ?></a></h3>
 				</div>
 				<div class="search"><i class="fa fa-search" aria-hidden="true"></i> Search</div>
-      </div><!-- /.header-->
+      </div>
 		</div>
 	</header>
 	<?php get_sidebar(); ?>

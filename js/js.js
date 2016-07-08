@@ -1,17 +1,15 @@
 (function($) {
-	//add ajaxified class
-  teaserStriping()
+
+  jQuery(window).scroll(function() {
+      var height = jQuery(window).scrollTop();
+
+      if(height  > 100) {
+        $('header').hide();
+        $('header').addClass('sticky');
+      } else if (height  < 100){
+        $('header').removeClass('sticky');
+        $('header').slideDown(200);
+      }
+  });
+
 })(jQuery);
-
-function isOdd(num) { return num % 2;}
-
-function teaserStriping() {
-  var $teasers = jQuery('a.post.teaser')
-  $teasers.each(function (i, value) {
-  if(!isOdd(i)) {
-    // debugger
-    jQuery(value).addClass('odd');
-  }
-    // console.log( i );
- });
-}
