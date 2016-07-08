@@ -11,25 +11,25 @@ body {
   position: relative;
 }
 
-.content-with-sidebar {
-  width: 69.29%;
-  min-width: 600px;
-  display: inline-block;
-}
+// .content-with-sidebar {
+//   width: 69.29%;
+//   min-width: 600px;
+//   display: inline-block;
+// }
 
 .sidebar {
-  width: 28.29%;
-  display: inline-block;
+  // width: 28.29%;
+  // display: inline-block;
   vertical-align: top;
   background: $secondary-body-color;
-  margin: 2em 0;
+  // margin: 2em 0;
   padding: 1em 0;
 }
 
 header {
   background: $secondary-body-color;
-  .main-nav {
-    float: right;
+  .menu.active {
+    z-index: 2000;
   }
   .header {
     display: flex;
@@ -41,7 +41,7 @@ header {
     .title {
       display: flex;
       align-items: flex-end;
-      h2 {
+      h3 {
         margin: 0;
         line-height: 1em;
       }
@@ -60,7 +60,7 @@ main {
 
 footer {
   background: $secondary-body-color;
-  font-size: $h6-font-size;
+  font-size: $h5-font-size;
 
   .info {
     display: inline-block;

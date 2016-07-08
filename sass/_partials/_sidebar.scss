@@ -1,0 +1,49 @@
+.sidebar {
+  display: none;
+}
+
+.sidebar.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    #searchform {
+      margin-top: 4em;
+      input {
+        background: none;
+        border: none;
+        font-family: $header-font-family;
+        font-size: $h3-font-size;
+        border-bottom: 2px solid;
+        line-height: 1.35em;
+        color: $tertiary-body-color;
+      }
+      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $tertiary-body-color;
+      }
+      //  i {
+      //   // font-family: $header-font-family;
+      //   font-size: $h3-font-size;
+      // }
+    }
+    .widget-area,
+    .menu {
+      max-width: 48%;
+      // display: inline-block;
+    }
+
+    .instagram-feed .item {
+      display: inline-block;
+      margin: 2%;
+      max-width: 45%;
+    }
+  }
+}

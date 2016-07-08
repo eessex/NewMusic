@@ -1,5 +1,5 @@
-<a class="post teaser" href="<?php the_permalink(); ?>">
-	<article class="post teaser <?php if ( has_post_thumbnail() ) { echo 'with-image'; } ?>">
+<a class="post teaser ajaxified <?php if ( has_post_thumbnail() ) { echo 'with-image'; }; ?>" href="<?php the_permalink(); ?>">
+	<article class="post teaser">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<div class="image">
 				<?php the_post_thumbnail(); ?>

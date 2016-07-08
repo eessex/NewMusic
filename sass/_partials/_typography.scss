@@ -4,7 +4,7 @@ color: $primary-text-color;
 font-size: $base-font-size;
 font-family: $base-font-family;
 font-weight: $base-font-weight;
-line-height: 1.6;
+line-height: 1.75;
 }
 
 a {
@@ -16,15 +16,13 @@ p {
   margin: $secondary-item-padding;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: $header-font-weight;
   font-family: $header-font-family;
 }
 
 h1 {
   font-size: $h1-font-size;
-  text-transform: uppercase;
-  color: $tertiary-body-color;
 }
 
 h2 {
@@ -36,7 +34,8 @@ h3 {
 }
 
 h4 {
-  font-size: $h4-font-size;
+  font-size: $h3-font-size;
+  font-weight: $base-font-weight;
 }
 
 h5 {
@@ -44,7 +43,8 @@ h5 {
 }
 
 h6 {
-  font-size: $h6-font-size;
+  font-size: $h5-font-size;
+  text-transform: uppercase;
 }
 
 blockquote {
@@ -53,6 +53,7 @@ blockquote {
 }
 
 nav.main-nav {
+  padding-top: 6em;
   ul {
     margin: 0;
     padding: 0;
@@ -62,13 +63,8 @@ nav.main-nav {
   li { display: inline-block; }
 
   a {
-    font-size: $h5-font-size;
+    font-size: $h3-font-size;
     font-family: $header-font-family;
-    display: block;
-    text-decoration: none;
-    padding-left: 1em;
-    text-transform: uppercase;
-    letter-spacing: .075em;
   }
 }
 

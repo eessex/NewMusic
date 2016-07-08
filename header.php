@@ -20,22 +20,17 @@
 
 <body>
 
-	<header class="ajaxified">
+	<header>
 		<div class="container">
       <div class="header">
-  			<div class="title"><h2><a href="<?php bloginfo('wpurl');?>"><?php echo get_bloginfo( 'name' ); ?></a></h2>
-  			<div class="lead description"><p><?php echo get_bloginfo( 'description' ); ?></p></div></div>
-
-        <nav class="main-nav">
-          <?php
-            // Primary navigation menu.
-            wp_nav_menu( array(
-              'theme_location' => 'primary',
-            ) );
-          ?>
-        </nav>
+				<div class="menu"><i class="fa fa-bars" aria-hidden="true"></i> Menu</div>
+				<div class="title">
+					<h3><a href="<?php bloginfo('wpurl');?>"><?php echo get_bloginfo( 'name' ); ?></a></h3>
+				</div>
+				<div class="search"><i class="fa fa-search" aria-hidden="true"></i> Search</div>
       </div><!-- /.header-->
 		</div>
 	</header>
+	<?php get_sidebar(); ?>
 
-	<main class="ajaxified">
+	<main class="">

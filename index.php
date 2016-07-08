@@ -1,6 +1,7 @@
 <?php get_header(); ?>
-  <div class="the-content">
-    <div class="content-with-sidebar">
+
+
+
       <div class="container">
 
         <?php	if ( have_posts() ) : while ( have_posts() ) : the_post();
@@ -15,7 +16,6 @@
         </nav>
 
       </div>
-    </div>
-  	<?php get_sidebar(); ?>
-  </div>
+
+
 <?php get_footer(); ?>

@@ -70,8 +70,8 @@ body {
   color: #222222;
   font-size: 16px;
   font-family: "Libre Franklin", sans-serif;
-  font-weight: 400;
-  line-height: 1.6; }
+  font-weight: 300;
+  line-height: 1.75; }
 
 /* line 10, sass/_partials/_typography.scss */
 a {
@@ -83,62 +83,103 @@ p {
   margin: 1.25em 0; }
 
 /* line 19, sass/_partials/_typography.scss */
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-  font-family: "Oswald", sans-serif; }
+  font-family: "Josefin Sans", sans-serif; }
 
 /* line 24, sass/_partials/_typography.scss */
 h1 {
-  font-size: 2.25em;
-  text-transform: uppercase;
-  color: #00b0b6; }
+  font-size: 3.75em; }
 
-/* line 30, sass/_partials/_typography.scss */
+/* line 28, sass/_partials/_typography.scss */
 h2 {
-  font-size: 2em; }
+  font-size: 2.75em; }
 
-/* line 34, sass/_partials/_typography.scss */
+/* line 32, sass/_partials/_typography.scss */
 h3 {
-  font-size: 1.75em; }
+  font-size: 2.25em; }
 
-/* line 38, sass/_partials/_typography.scss */
+/* line 36, sass/_partials/_typography.scss */
 h4 {
-  font-size: 1.5em; }
+  font-size: 2.25em;
+  font-weight: 300; }
 
-/* line 42, sass/_partials/_typography.scss */
+/* line 41, sass/_partials/_typography.scss */
 h5 {
-  font-size: 0.9em; }
+  font-size: 1em; }
 
-/* line 46, sass/_partials/_typography.scss */
+/* line 45, sass/_partials/_typography.scss */
 h6 {
-  font-size: 0.75em; }
+  font-size: 1em;
+  text-transform: uppercase; }
 
 /* line 50, sass/_partials/_typography.scss */
 blockquote {
   padding-left: 1em;
   border-left: 2px solid #fafafa; }
 
-/* line 56, sass/_partials/_typography.scss */
-nav.main-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-/* line 62, sass/_partials/_typography.scss */
-nav.main-nav li {
-  display: inline-block; }
-/* line 64, sass/_partials/_typography.scss */
-nav.main-nav a {
-  font-size: 0.9em;
-  font-family: "Oswald", sans-serif;
-  display: block;
-  text-decoration: none;
-  padding-left: 1em;
-  text-transform: uppercase;
-  letter-spacing: .075em; }
+/* line 55, sass/_partials/_typography.scss */
+nav.main-nav {
+  padding-top: 6em; }
+  /* line 57, sass/_partials/_typography.scss */
+  nav.main-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  /* line 63, sass/_partials/_typography.scss */
+  nav.main-nav li {
+    display: inline-block; }
+  /* line 65, sass/_partials/_typography.scss */
+  nav.main-nav a {
+    font-size: 2.25em;
+    font-family: "Josefin Sans", sans-serif; }
 
-/* line 76, sass/_partials/_typography.scss */
+/* line 72, sass/_partials/_typography.scss */
 header .header, header .main-nav {
   display: inline-block; }
+
+/* line 1, sass/_partials/_sidebar.scss */
+.sidebar {
+  display: none; }
+
+/* line 5, sass/_partials/_sidebar.scss */
+.sidebar.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; }
+  /* line 14, sass/_partials/_sidebar.scss */
+  .sidebar.active .container {
+    display: flex;
+    justify-content: space-between; }
+    /* line 18, sass/_partials/_sidebar.scss */
+    .sidebar.active .container #searchform {
+      margin-top: 4em; }
+      /* line 20, sass/_partials/_sidebar.scss */
+      .sidebar.active .container #searchform input {
+        background: none;
+        border: none;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 2.25em;
+        border-bottom: 2px solid;
+        line-height: 1.35em;
+        color: #00b0b6; }
+      /* line 29, sass/_partials/_sidebar.scss */
+      .sidebar.active .container #searchform ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #00b0b6; }
+    /* line 37, sass/_partials/_sidebar.scss */
+    .sidebar.active .container .widget-area,
+    .sidebar.active .container .menu {
+      max-width: 48%; }
+    /* line 43, sass/_partials/_sidebar.scss */
+    .sidebar.active .container .instagram-feed .item {
+      display: inline-block;
+      margin: 2%;
+      max-width: 45%; }
 
 /* line 1, sass/_partials/_layouts.scss */
 body {
@@ -153,27 +194,18 @@ body {
   padding: 0 2.5em;
   position: relative; }
 
-/* line 14, sass/_partials/_layouts.scss */
-.content-with-sidebar {
-  width: 69.29%;
-  min-width: 600px;
-  display: inline-block; }
-
 /* line 20, sass/_partials/_layouts.scss */
 .sidebar {
-  width: 28.29%;
-  display: inline-block;
   vertical-align: top;
   background: #fafafa;
-  margin: 2em 0;
   padding: 1em 0; }
 
 /* line 29, sass/_partials/_layouts.scss */
 header {
   background: #fafafa; }
   /* line 31, sass/_partials/_layouts.scss */
-  header .main-nav {
-    float: right; }
+  header .menu.active {
+    z-index: 2000; }
   /* line 34, sass/_partials/_layouts.scss */
   header .header {
     display: flex;
@@ -186,7 +218,7 @@ header {
       display: flex;
       align-items: flex-end; }
       /* line 44, sass/_partials/_layouts.scss */
-      header .header .title h2 {
+      header .header .title h3 {
         margin: 0;
         line-height: 1em; }
       /* line 49, sass/_partials/_layouts.scss */
@@ -200,7 +232,7 @@ main {
 /* line 61, sass/_partials/_layouts.scss */
 footer {
   background: #fafafa;
-  font-size: 0.75em; }
+  font-size: 1em; }
   /* line 65, sass/_partials/_layouts.scss */
   footer .info {
     display: inline-block; }
