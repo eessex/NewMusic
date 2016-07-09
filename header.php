@@ -8,7 +8,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Blog Template for <?php echo get_bloginfo( 'name' ); ?></title>
+	<title>Simple theme for <?php echo get_bloginfo( 'name' ); ?></title>
 	<!-- <link href="<?php //bloginfo('template_directory');?>/style.css" rel="stylesheet"> -->
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -20,22 +20,21 @@
 
 <body>
 
-	<header class="ajaxified">
+	<header>
 		<div class="container">
       <div class="header">
-  			<div class="title"><h2><a href="<?php bloginfo('wpurl');?>"><?php echo get_bloginfo( 'name' ); ?></a></h2>
-  			<div class="lead description"><p><?php echo get_bloginfo( 'description' ); ?></p></div></div>
-
-        <nav class="main-nav">
-          <?php
-            // Primary navigation menu.
-            wp_nav_menu( array(
-              'theme_location' => 'primary',
-            ) );
-          ?>
-        </nav>
-      </div><!-- /.header-->
+				<div class="menu"><i class="fa fa-bars" aria-hidden="true"></i> Menu</div>
+				<div class="title">
+					<h3><a href="<?php bloginfo('wpurl');?>"><?php echo get_bloginfo( 'name' ); ?></a></h3>
+				</div>
+				<div class="search"><i class="fa fa-search" aria-hidden="true"></i> Search</div>
+      </div>
+			<div id="header-search">
+				<?php get_search_form(); ?>
+			</div>
 		</div>
 	</header>
 
-	<main class="ajaxified">
+	<?php get_sidebar(); ?>
+
+	<main class="">

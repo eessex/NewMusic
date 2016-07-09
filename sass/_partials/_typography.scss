@@ -4,26 +4,31 @@ color: $primary-text-color;
 font-size: $base-font-size;
 font-family: $base-font-family;
 font-weight: $base-font-weight;
-line-height: 1.6;
+line-height: 1.75;
+}
+
+header a {
+  color: $primary-text-color;
 }
 
 a {
-  color: $primary-link-color;
+  color: $secondary-text-color;
   text-decoration: none;
 }
-
+a:hover {
+  color: $tertiary-body-color;
+}
 p {
   margin: $secondary-item-padding;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: $header-font-weight;
   font-family: $header-font-family;
 }
 
 h1 {
   font-size: $h1-font-size;
-  text-transform: uppercase;
 }
 
 h2 {
@@ -35,7 +40,8 @@ h3 {
 }
 
 h4 {
-  font-size: $h4-font-size;
+  font-size: $h3-font-size;
+  font-weight: $base-font-weight;
 }
 
 h5 {
@@ -44,31 +50,26 @@ h5 {
 
 h6 {
   font-size: $h6-font-size;
+  text-transform: uppercase;
+  letter-spacing: .05em;
 }
 
 blockquote {
     padding-left: 1em;
-    border-left: 2px solid $secondary-body-color;
+    border-left: 2px solid $primary-text-color;
 }
 
 nav.main-nav {
+  padding-top: 6em;
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
-  li { display: inline-block; }
-
   a {
-    font-size: $h5-font-size;
-    font-weight: $header-font-weight;
+    font-size: $h3-font-size;
     font-family: $header-font-family;
-    display: block;
-    text-decoration: none;
-    padding-left: 1em;
-    text-transform: uppercase;
-    letter-spacing: .025em;
   }
 }
 
@@ -76,4 +77,9 @@ header {
   .header, .main-nav {
     display: inline-block;
   }
+}
+
+article ul {
+  list-style: circle;
+  margin-left: 1.25em;
 }

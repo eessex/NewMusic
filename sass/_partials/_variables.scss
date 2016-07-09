@@ -1,8 +1,11 @@
 /*_variables.scss */
 /* Body Text Styles */
-$primary-body-color: #fff;
-$secondary-body-color: #eee;
-$tertiary-body-color: honeydew;
+
+$gray-dark: rgba(76,86,79,1);
+
+$primary-body-color: whitesmoke;
+$secondary-body-color: #fafafa;
+$tertiary-body-color: mediumaquamarine;
 
 $primary-text-color: #222222;
 $secondary-text-color: gray;
@@ -12,19 +15,19 @@ $secondary-link-color: #ccc;
 
 $base-font-size: 16px;
 $base-font-family: 'Libre Franklin', sans-serif;
-$base-font-weight: 400;
+$base-font-weight: 300;
 
 $base-item-padding: 0 2.5em;
 $secondary-item-padding: 1.25em 0;
 
 $header-font-weight: 700;
-$header-font-family: 'Oswald', sans-serif;
+$header-font-family: 'Josefin Sans', sans-serif;
 
-$h1-font-size: 2.25em;
-$h2-font-size: 2em;
-$h3-font-size: 1.75em;
-$h4-font-size: 1.5em;
-$h5-font-size: .9em;
-$h6-font-size: .75em;
+$h1-font-size: 3.75em;
+$h2-font-size: 2.75em;
+$h3-font-size: 2.25em;
+$h4-font-size: 2.25em;
+$h5-font-size: 1em;
+$h6-font-size: .9em;
 
 $base-borders: 1px solid #eee;
