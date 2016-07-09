@@ -15,7 +15,9 @@ a {
   color: $secondary-text-color;
   text-decoration: none;
 }
-
+a:hover {
+  color: $tertiary-body-color;
+}
 p {
   margin: $secondary-item-padding;
 }

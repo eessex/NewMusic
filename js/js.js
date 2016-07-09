@@ -2,8 +2,9 @@
 
   //slide menu/sidebar
   $(document).on( 'click', 'body .header .menu', function( event ) {
-    $(this).toggleClass('active');
     $('body .sidebar').toggleClass('active').slideToggle();
+    $(this).siblings('.title').toggle();
+    $(this).toggleClass('active');
   });
 
   //reveal search bar in header
@@ -16,12 +17,12 @@
   // menu is sticky when scrolled
   jQuery(window).scroll(function() {
       var height = jQuery(window).scrollTop();
-      if(height  > 100) {
+      if(height  > 600) {
         $('header').hide();
         $('header').addClass('sticky');
-      } else if (height  < 100){
+      } else if (height  < 600){
         $('header').removeClass('sticky');
-        $('header').slideDown(200);
+        $('header').slideDown(300);
       }
   });
 
